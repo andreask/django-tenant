@@ -1,0 +1,17 @@
+{% load i18n %}
+<html lang="sv">
+    <body>
+        <table>
+            <tr>
+                <th>{% translate "Name" %}</th>
+                <th>{% translate "Amount" %}</th>
+            </tr>
+            {% for order in object_list %}
+                <tr>
+                    <td>{{ order.name }}</td>
+                    <td>{{ order.amount }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

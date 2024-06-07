@@ -1,0 +1,16 @@
+<html lang="sv">
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label for="username">E-mail</label>
+            <input type="email" name="username" id="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
